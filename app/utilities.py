@@ -1,6 +1,6 @@
 import geopandas as gpd
 from shapely.geometry import shape
-
+import logging
 
 US_SIZE = 9_147_643_000_000 # square meters
 FOUR_STATES_SIZE = 801_833_000_000 # square meters CA_OR_NV_WA
@@ -9,7 +9,7 @@ CALIFORNIA_SIZE = 403_882_000_000 # square meters
 def calculate_overlap(geojson):
     # Extract the geometries from the GeoJSON features
     geometries = [shape(feature["geometry"]) for feature in geojson["features"]]
-
+   
     # Convert the geometries to a GeoDataFrame
     aoi = gpd.GeoDataFrame(geometry=geometries, crs="EPSG:4326")
     
@@ -18,9 +18,10 @@ def calculate_overlap(geojson):
 
     # Check the size of the AOI
     if aoi_area > US_SIZE:
-        return {"message": "AOI size exceeds limit. Please make your AOI smaller."}
+        logging.warning("AOI size exceeds limit. Please make your AOI smaller.")
+        return {"error": "AOI size exceeds limit. Please make your AOI smaller."}
     elif aoi_area > FOUR_STATES_SIZE:
-        print("Warning: This is a very large AOI.")
+        logging.warning("Warning: This is a very large AOI.")
     elif aoi_area > CALIFORNIA_SIZE:
         print("Note: This is a large AOI.")
 

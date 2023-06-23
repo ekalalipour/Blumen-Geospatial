@@ -5,10 +5,10 @@ from flask import Blueprint
 
 api = Blueprint('api', __name__)
 
-@api.route('/api/test', methods=['GET'])
-def get_data():
-    data = {'message': 'Hello from the backend!'}
-    return jsonify(data)
+# @api.route('/api/test', methods=['GET'])
+# def get_data():
+#     data = {'message': 'Hello from the backend!'}
+#     return jsonify(data)
 
 
 
@@ -25,7 +25,9 @@ def calculate_overlap_api():
 
     if "message" in overlap_data and overlap_data["message"] == "No overlap found":
         return overlap_data, 200
-
+        
+    if "message" in overlap_data and overlap_data["message"] == "AOI size exceeds limit. Please make your AOI smaller.":
+        return {"error": "AOI size exceeds limit. Please make your AOI smaller."}, 200
     # Return the results as JSON
     return jsonify(overlap_data), 200
 
