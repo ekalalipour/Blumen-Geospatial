@@ -49,6 +49,9 @@ after downloading, __place the file in the PADUS3 folder in the root directory__
     npm start
    
 This will start the frontend application and open it in a web browser.
+
+6. Access the application by opening your web browser and navigating to http://localhost:3000.
+
   ## Note
 To run the application locally, make sure to update the URL in both the __setupProxy.js__ and __App.js__ files. In the __handleSubmit__ function of App.js, change the URL to __http://localhost:5001/api/overlap__. Similarly, in the setupProxy.js file, update the target URL to __http://localhost:5001__. This ensures that the frontend communicates with the locally running backend server.
 
@@ -66,7 +69,6 @@ To run the application locally, make sure to update the URL in both the __setupP
 -105.00758171081543, 39.96275549363738<br>
 -105.00432014465332, 39.96167604831683<br>
 
-6. Access the application by opening your web browser and navigating to http://localhost:3000.
 
 ### Running Tests (Pytest)
 To run the tests, make sure you have the dependencies installed. You can then run the tests using the following command:
