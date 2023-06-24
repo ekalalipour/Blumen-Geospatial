@@ -1,0 +1,18 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile-frontend
+    ports:
+      - '3000:3000'
+    environment:
+      - REACT_APP_BACKEND_URL=http://blumen-backend:5001/api/overlap
+    depends_on:
+      - backend
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile-backend
+    ports:
+      - '5001:5001'

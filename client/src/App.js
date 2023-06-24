@@ -23,7 +23,7 @@ const Form = () => {
         .filter((line) => line !== '') // Remove empty lines
         .map((line) => line.split(',').map(Number)); // Split each line by comma and convert to numbers
 
-      const response = await axios.post('/api/overlap', {
+      const response = await axios.post('http://blumen-backend:5001/api/overlap', {
         type: 'FeatureCollection',
         features: [
           {

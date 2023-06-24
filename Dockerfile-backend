@@ -1,0 +1,14 @@
+FROM python:3.11.4
+
+# Install GDAL dependencies
+RUN apt-get update && apt-get install -y libgdal-dev
+
+WORKDIR /app
+
+COPY . .
+
+RUN pip3 install -r requirements.txt 
+
+EXPOSE 5001
+
+CMD [ "python", "./main.py" ]
