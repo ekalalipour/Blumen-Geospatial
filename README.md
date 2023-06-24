@@ -93,7 +93,7 @@ For each category (Mang_Type, FeatClass, Des_Tp) in the PAD-US dataset, the func
 The frontend code uses React hooks to manage state variables for user input and interpretation results. It sends a POST request to the backend API with entered coordinates and displays the interpretation results to the user.
 
 ## Testing the API endpoint with Postman or a similar tool
-If you want to test the api endpoint __/api/overlap](http://127.0.0.1:5001/api/overlap__ you can use these sample data:
+If you want to test the api endpoint http://127.0.0.1:5001/api/overlap you can use these sample data:
 
 __No Overlap:__
 
