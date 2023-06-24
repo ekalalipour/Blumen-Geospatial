@@ -22,8 +22,8 @@ def calculate_overlap(geojson):
         return {"error": "AOI size exceeds limit. Please make your AOI smaller."}
     elif aoi_area > FOUR_STATES_SIZE:
         logging.warning("Warning: This is a very large AOI.")
-    elif aoi_area > CALIFORNIA_SIZE:
-        print("Note: This is a large AOI.")
+    # elif aoi_area > CALIFORNIA_SIZE:
+    #     print("Note: This is a large AOI.")
 
 
     padus_4326 = gpd.read_file('PADUS3/PADUS3_0Geopackage_4326.gpkg')
