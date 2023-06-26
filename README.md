@@ -72,7 +72,8 @@ To run the application locally, make sure to update the URL in both the __setupP
 -114.1308, 32.5343<br>
 -124.4096, 32.5343<br>
 
-
+Submit the coordinates, and after few minutes you should get a response like this:<br>
+![Screenshot](frontend-example.png)
 ### Running Tests (Pytest)
 To run the tests, make sure you have the dependencies installed. You can then run the tests using the following command:
   in the root directory run : pytest -s tests/test_.py
