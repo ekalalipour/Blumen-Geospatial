@@ -12,11 +12,11 @@ Blumen Geospatial is a web application that allows users to perform spatial anal
 
 1. Install Docker on your machine. 
 
-2. Clone the repository to your local machine:
-    git clone <desired-directory>
-3. Build and run the Docker containers using Docker Compose:
-     cd <project-directory>
-     docker-compose up
+2. Clone the repository to your local machine:<br>
+    git clone <desired-directory><br>
+3. Build and run the Docker containers using Docker Compose:<br>
+     cd <project-directory><br>
+     docker-compose up<br>
    
 The frontend container is responsible for running the React-based user interface and handling client-side interactions.
 
@@ -32,11 +32,11 @@ make sure you have
 1. Download the the PADUS3 file from here: https://drive.google.com/file/d/1l0m-8OXPUPjx7VyTCBQ_3JO4cIlFQ7BA/view?usp=drive_link
 after downloading, __place the file in the PADUS3 folder in the root directory__.
 
-2.Activate the virtual environment:
-    On macOS and Linux:
-        source venv/bin/activate
-    On Windows: 
-        venv\Scripts\activate
+2.Activate the virtual environment:<br>
+    On macOS and Linux:<br>
+        source venv/bin/activate<br>
+    On Windows: <br>
+        venv\Scripts\activate<br>
 
 3. Install the dependencies for the frontend:
      cd <project-directory>/client
