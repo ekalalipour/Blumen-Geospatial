@@ -13,9 +13,9 @@ Blumen Geospatial is a web application that allows users to perform spatial anal
 1. Install Docker on your machine. 
 
 2. Clone the repository to your local machine: <br>
-    git clone <desired-directory>
+    git clone desired-directory
 3. Build and run the Docker containers using Docker Compose:<br>
-     cd <project-directory>
+     cd project-directory
      docker-compose up
    
 The frontend container is responsible for running the React-based user interface and handling client-side interactions.
