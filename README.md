@@ -66,14 +66,11 @@ To run the application locally, make sure to update the URL in both the __setupP
   ensure that each pair of latitude and longitude is on a new line, and separate the latitude and    longitude values with a comma. Do not include any square brackets or commas at the end of each     line. 
   
   for example:<br>
--105.00432014465332, 39.96167604831683<br>
--105.00715255737305, 39.95868749291691<br>
--105.00921249389647, 39.95948888179304<br>
--105.01067161560059, 39.9602543440034<br>
--105.01195907592773, 39.9607242332767<br>
--105.00989913940431, 39.96321407936762<br>
--105.00758171081543, 39.96275549363738<br>
--105.00432014465332, 39.96167604831683<br>
+-124.4096, 32.5343<br>
+-124.4096, 42.0095<br>
+-114.1308, 42.0095<br>
+-114.1308, 32.5343<br>
+-124.4096, 32.5343<br>
 
 
 ### Running Tests (Pytest)
