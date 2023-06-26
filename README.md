@@ -32,7 +32,7 @@ make sure you have
 1. Download the the PADUS3 file from here: https://drive.google.com/file/d/1l0m-8OXPUPjx7VyTCBQ_3JO4cIlFQ7BA/view?usp=drive_link
 after downloading, __place the file in the PADUS3 folder in the root directory__.
 
-2.Activate the virtual environment:<br>
+2.Activate the virtual environment:
     On macOS and Linux:<br>
         source venv/bin/activate<br>
     On Windows: <br>
