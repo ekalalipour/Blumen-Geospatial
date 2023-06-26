@@ -32,19 +32,25 @@ make sure you have
 1. Download the the PADUS3 file from here: https://drive.google.com/file/d/1l0m-8OXPUPjx7VyTCBQ_3JO4cIlFQ7BA/view?usp=drive_link
 after downloading, __place the file in the PADUS3 folder in the root directory__.
 
-2. Install the dependencies for the frontend:
+2.Activate the virtual environment:
+    On macOS and Linux:
+        source venv/bin/activate
+    On Windows: 
+        venv\Scripts\activate
+
+3. Install the dependencies for the frontend:
      cd <project-directory>/client
      npm install
 
-3. Install the dependencies for the backend:
+4. Install the dependencies for the backend:
      cd <project-directory>
      pip3 install -r requirements.txt
 
-4. Start the backend server:
+5. Start the backend server:
     cd <project-directory>
     python3 main.py
 
-5. Start the frontend development server:
+6. Start the frontend development server:
     cd <project-directory>/client
     npm start
    
