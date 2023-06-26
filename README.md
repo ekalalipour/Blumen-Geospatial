@@ -56,7 +56,7 @@ after downloading, __place the file in the PADUS3 folder in the root directory__
    
 This will start the frontend application and open it in a web browser.
 
-6. Access the application by opening your web browser and navigating to http://localhost:3000.
+7. Access the application by opening your web browser and navigating to http://localhost:3000.
 
   ## Note
 To run the application locally, make sure to update the URL in both the __setupProxy.js__ and __App.js__ files. In the __handleSubmit__ function of App.js, change the URL to __http://localhost:5001/api/overlap__. Similarly, in the setupProxy.js file, update the target URL to __http://localhost:5001__. This ensures that the frontend communicates with the locally running backend server.
