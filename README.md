@@ -28,7 +28,7 @@ When running the frontend and backend containers together using Docker Compose, 
 
 ### Running Locally
 In order to test and run the application you can run it locally on your system:
-make sure you have 
+make sure you have __PADUS3_0Geopackage_4326.gpkg__ file
 1. Download the the PADUS3 file from here: https://drive.google.com/file/d/1l0m-8OXPUPjx7VyTCBQ_3JO4cIlFQ7BA/view?usp=drive_link
 after downloading, __place the file in the PADUS3 folder in the root directory__.
 
