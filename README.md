@@ -22,9 +22,6 @@ The frontend container is responsible for running the React-based user interface
 
 The backend container runs the Flask server and handles API requests, performs spatial analysis, and interacts with the database or external services.
 
-## Important Note
-
-When running the frontend and backend containers together using Docker Compose, you may encounter issues with the communication between them. Although both the frontend and backend work separately, there might be a connectivity problem between the containers when they are run together.
 
 ### Running Locally
 In order to test and run the application you can run it locally on your system:
